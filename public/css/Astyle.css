@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #0f1014;
+    font-family: 'Gilroy', sans-serif;
+
+}
+
+.main-section{
+    display: flex;
+}
+
+.content-section{
+    width: 100vw;
+    padding: 4vw;
+}
+nav{
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.search {
+    width: 15vw;
+    padding: 0.4vw;
+    height: 2vw;
+    border: none;
+    border-radius: 0.9vw;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+}
+
+.search input[type="text"]{
+    border: none;
+    margin-left: 0.3vw;
+    height: 1.8vw;
+    width: 78%;
+    position: absolute;
+    margin-top: -0.3vw;
+    outline: none;
+    color: #000;
+}
+
+.search i{
+    color: #000;
+    font-size: 1.3vw;
+    margin-top: -0.12vw;
+    margin-left: 12vw;
+    position: absolute;
+}
+
+section{
+    height: 97%;
+    width: 100%;
+    display: flex;
+}
+
+.user-section{
+    height: 74.2vh;
+    background-color: #8f98b20d;
+    width: 78.8vw;
+    border-radius: 1.5vw;
+    padding: 1vw;
+    overflow: auto;
+}
+
+.user-section::-webkit-scrollbar {
+    display: none;
+}
+
+.user-section h2{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    color: #ff8d3cc8;
+}
+.user-section table{
+   width: 100%;
+   margin-top: 4.5vw;
+   text-align: center;
+}
+
+.user-section table tbody td{
+    height: 3.8rem;
+
+}
+.user-section table tbody tr:last-child td{
+    border: none;
+}
+
+.user-section table thead th{
+     color: #ffaf76c8;
+}
+
+.hr2{
+    position: absolute;
+    top: 37.5%;
+    margin-left: 1.2%;
+    width: 74%;
+}
+
+.user-section a{
+   text-align: center;
+   display: block;
+   margin: 1rem;
+   color: #737fec92;
+   cursor: pointer;
+}
+
+.user-section .update{
+    color: royalblue;
+    cursor: pointer;
+}
+
+.user-section .Delete{
+    cursor: pointer;
+    color: royalblue;
+    padding: 0.4vw;
+    border: none;
+    border-radius: 5vw;
+    background-color: #ffffff14;
+}
+
+.Released{
+    color: #45e26a96;
+}
+
+.shw{
+    height: 4vw;
+    bottom: 4vw;
+    width: 78.8vw;
+    border-bottom-left-radius: 1.5vw;
+    border-bottom-right-radius: 1.5vw;
+    background-color: rgba(174, 174, 174, 0.069);
+    position: absolute;
+}
+.Show-all{
+    text-align: center;
+    margin-top: 1.5vw;
+    margin-left: -1vw;
+    font-size: 1vw;
+    color: #ff8d3cc8;
+    cursor: pointer;
+}
+
+.ad{
+    font-size: 0.7vw;
+    margin-left: 0.7vw;
+}
+
+.upload{
+    height: 3vw;
+    bottom: 4.2vw;
+    width: 78.8vw;
+    border-bottom-left-radius: 1.5vw;
+    border-bottom-right-radius: 1.5vw;
+    background-color: rgba(191, 219, 255, 0.069);
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upload_movies{
+    text-align: center;
+    margin-left: -6.5vw;
+    font-size: 1vw;
+    color: #b6ff76c8;
+    cursor: pointer;
+}

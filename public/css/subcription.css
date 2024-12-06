@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+.main-section{
+  height: 100vh;
+  width: 100vw;
+  /* background-image: url(images\Logo-Background\hotstar-blue-bg.jpg);
+  background-position: center;
+  background-size: cover; */
+  position: relative;
+}
+
+.nav-section{
+  width: 12vw;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vh;
+  margin-left: 4vw;
+}
+
+.logo img{
+  width: 5vw;
+  height: 4vw;
+  border-radius: 0px;
+}
+
+
+.menu{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-left: 1vw;
+}
+
+.menu ul{
+  list-style: none;
+  font-size: 1.3vw;
+  margin-left: -1vw;
+}
+
+.menu ul li p{
+position: absolute;
+white-space: nowrap;
+margin-top: -5.2vw; 
+margin-left: 6vw;
+visibility: hidden;
+opacity: 0;
+color: #FFF;
+}
+.menu ul li i{
+  margin-bottom: 7vh;
+  opacity: 0.8;
+  margin-left: 3.7vw;
+  color: #FFF; 
+  transition: all linear 0.1s;
+}
+
+.menu ul li i:hover{
+  opacity: 1;
+  font-size: 1.4vw;
+}
+
+.subcription-section{
+    width: 80vw;
+    height: 40vw;
+    padding: 1vw;
+    padding-top: 1.8vw;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.7vw;
+    margin-left: 16vw;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-top: 6vw;
+}
+
+.subcription-section div {
+    height: 34vw;
+    width: 18vw;
+    background-color: #acb3c9;
+    border-radius: 0.5vw;   
+}
+
+.basic div{
+    margin: 1.5vw;
+    height: 5vw;
+    width: 15vw;
+    padding: 1vw;
+    background-color: #47474759;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.basic>h5{
+    margin-left: 1.7vw;
+    margin-bottom: 1.5vw;
+}
+
+.basic h5>p{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.basic>div>h3{
+  margin-top: -0.7vw;
+}
+.update{
+    color: #ffffff;
+    font-size: 1.3vw;
+    background-color: #000000bf;
+    width: 14vw;
+    margin: 1vw 2vw;
+    border-radius: 0.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main-section>img{
+  z-index: -1;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}

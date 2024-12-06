@@ -1,0 +1,575 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+  
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.main-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.content-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-section{
+    width: 12vw;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-section:hover{
+    width: 12vw;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background: linear-gradient(to right, #0f1014 , transparent  100%);
+    backdrop-filter: blur(5px);
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    margin-left: 2.2vw;
+}
+
+.logo img{
+    width: 3.5vw;
+    height: 2.7vw;
+    border-radius: 0px;
+}
+
+.logo button{
+    width: 6vw;
+    height: 1.5vw;
+    border: none;
+    border-radius: 1vw;
+    margin-top: 1.5vh;
+    font-size: 0.85vw;
+    background-color: #262D3F; 
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-left: -1.2vw;
+    padding-bottom: 0.5vh;
+}
+
+.logo button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    margin-left: 1vw;
+}
+
+.menu ul{
+    list-style: none;
+    font-size: 1.3vw;
+    margin-left: -0.1vw;
+}
+
+.menu ul li p{
+  position: absolute;
+  white-space: nowrap;
+  margin-top: -5.2vw; 
+  margin-left: 2.5vw;
+  visibility: hidden;
+  opacity: 0;
+  color: #FFF;
+}
+.menu ul li i{
+    margin-bottom: 7vh;
+    opacity: 0.8;
+    color: #FFF; 
+    transition: all linear 0.1s;
+}
+
+.menu ul li i:hover{
+    opacity: 1;
+    font-size: 1.4vw;
+}
+.section-1{
+    height: 100%;
+    width: 100%;
+}
+.section-1 .linear{
+    width: 100%;
+    height: 105vh;
+    margin-top: -10vh;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+}
+
+.section-1 .linear1{
+    background-image: url(https://img10.hotstar.com/image/upload/f_auto,q_90,w_1920/sources/r1/cms/prod/6312/1714673666312-i);
+    width: 100%;
+    height: 105vh;
+    margin-top: -10vh;
+    z-index: -1;
+    position: absolute;
+}
+
+.section-1 .bg-image{
+    width: 100%;
+    height: 105vh;
+    margin-top: -10vh;
+    z-index: 2;
+    background: linear-gradient(to right, #0f1014 ,transparent 70%);
+}
+.section-1 .bg-linear{
+    width: 100%;
+    height: 105vh;
+    margin-top: -10vh;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(to top, #0f1014,transparent 70%);
+}
+.description{
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    margin-top: -60vh;
+    margin-left: 60vw;
+    color: #fff;
+}
+
+.description2{
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    margin-top: -60vh;
+    margin-left: 10vw;
+    color: #fff;
+}
+
+.description h1{
+    font-size: 3.8vw;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-left: -1vh;
+    color: #fff;
+}
+
+.description2 h1{
+    font-size: 3.8vw;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-left: -1vh;
+    color: #fff;
+}
+
+.description .Type{
+    margin-top: -3vh;
+}
+
+.description2 .Type{
+    margin-top: -3vh;
+}
+
+
+.description p{
+    font-weight: 600;
+    width: 29vw;
+    margin-top: -2vh;
+    color: #fff;
+}
+
+.description2 p{
+    font-weight: 600;
+    width: 29vw;
+    margin-top: -2vh;
+    color: #fff;
+}
+
+#btn{
+    width: 13vw;
+    height: 3vw;
+    border: none;
+    border-radius: 1vw;
+    margin-top: 1.5vh;
+    font-size: 0.85vw;
+    background-color: #fff; 
+    color: #0f1014;
+    font-size: 1.1vw;
+    margin-right: 0.5vw;
+    cursor: pointer;
+}
+
+#btn2{
+    width: 3.5vw;
+    height: 3vw;
+    border: none;
+    border-radius: 1vw;
+    margin-top: 1.5vh;
+    font-size: 0.85vw;
+    background-color: #fff; 
+    color: #0f1014;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+
+.movies-section{
+    height: 300vh;
+    width: 100%;
+    padding: 5vw 0vw 0vw 7vw;
+    background-color: #0f1014;
+}
+
+.Title{
+    position: absolute;
+    color: #ffffffab;
+    font-size: 3.3vh;
+}
+
+.Title2{
+    position: absolute;
+    margin-left: 0.4vw;
+    color: #ffffffab;
+    font-size: 3.3vh;
+}
+
+.latest-release{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.latest-release::-webkit-scrollbar{
+    display: none;
+}
+
+.scroller-in{
+    display: inline-flex;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cards {
+    position: relative;
+    height: 15vw;
+    width: 11vw;
+    border-radius: 0.4vw;
+    overflow: hidden;
+    margin-top: 5vw;
+    transition: .5s;
+    margin-left: 1.8vw;
+    margin-bottom: 5vw;
+}
+
+.cards img {
+    height: 100%;
+    width: 100%;
+    scale: 1.1;
+    object-fit: cover;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+.cards:hover .card-body {
+    opacity: 1;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-body {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, #0f101400, #192133 98%);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+}
+
+.des {
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.watchlist-btn {
+    position: relative;
+    width: 100%;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 1vw;
+}
+
+
+.watchlist-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    height: 35px;
+    width: 35px;
+    background-image: url(images/add.png);
+    background-size: cover;
+    transform: scale(0.4);
+}
+
+.watchlist-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+footer{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #0f1014;
+    padding: 5vw 0vw 2vw 5vw;
+    color: #e1e6f0;
+}
+
+footer .main-div{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    
+}
+
+footer .main-div p a{
+    color: #8F98B2;
+    text-decoration: none;
+}
+
+.fa-solid{
+    color: #8F98B2;
+}
+
+.main-h5{
+    margin-bottom: 5vh;
+}
+
+.f-p{
+    position: absolute;
+    margin-top: -3.1vh;
+    margin-left: 1.7vw;
+    color: #8F98B2;
+}
+
+footer .second-div{
+    position: relative;
+    margin-left: 7.5vw;
+    margin-top: 4vh;
+    color: #8F98B2;
+}
+.second-div-1 {
+    display: flex;
+}
+
+.second-div-1 i{
+    margin-top: 0.7vh;
+}
+.second-div-1 p a{
+    margin-left: 0.5vw;
+    text-decoration: none;
+    color: #8F98B2;
+}
+.second-div-2 {
+    display: flex;
+}
+
+.second-div-2 p a{
+    margin-right: 1vw;
+    text-decoration: none;
+    color: #8F98B2;
+}
+
+.fa-brands{
+    font-size: 1.7vw;
+    margin-right: 1vw;
+}
+
+.f-div-4 a i{
+    color: #8F98B2;
+    text-decoration: none;
+}
+
+.badge {
+    position: absolute;
+    padding: 2px 5px;
+    font-size: 12px;
+    margin-left: -7px;
+    margin-top: -4px;
+}
+
+.reviews {
+    width: 91vw;
+    margin-top: 3vw;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap; /* Allow multiple cards to wrap on the same row */
+    gap: 15px; /* Space between the cards */
+}
+
+/* Each review card */
+.review {
+    width: 213px; /* Adjust the width to create a smaller card */
+    height: 270px; /* Fixed height for a square-like card */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Ensure spacing between content */
+    overflow: hidden;
+}
+
+/* Movie Info Section */
+.movie-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.movie-img {
+    width: 40px; /* Smaller image size */
+    height: 60px; /* Smaller image size */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.movie-name {
+    font-size: 14px; /* Smaller font size */
+    font-weight: bold;
+    color: #333;
+    overflow: hidden; /* Ensure long movie names do not overflow */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* User Profile Image */
+.user-img {
+    width: 30px; /* Smaller user image size */
+    height: 30px; /* Smaller user image size */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Review Details */
+.review-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.review h4 {
+    font-size: 14px; /* Smaller user name font size */
+    font-weight: bold;
+    margin: 0;
+    margin-top: 5px;
+    color: #333;
+}
+
+.rating {
+    margin-top: 5px;
+}
+
+.rating i {
+    font-size: 16px; /* Smaller rating star size */
+    color: #f5a623;
+    margin-right: 3px;
+}
+
+/* Review Text */
+.review p {
+    font-size: 12px; /* Smaller review text */
+    color: #555;
+    margin-top: 5px;
+    line-height: 1.4;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Prevent long reviews from overflowing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .review {
+        width: 100%; /* Full width on small screens */
+        height: auto;
+    }
+
+    .movie-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .movie-img {
+        width: 30px;
+        height: 45px;
+    }
+
+    .movie-name {
+        font-size: 12px;
+    }
+
+    .review-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-img {
+        margin-bottom: 10px;
+    }
+}

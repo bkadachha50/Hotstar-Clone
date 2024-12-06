@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+  
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.main-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.content-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-section{
+    width: 12vw;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-section:hover{
+    width: 12vw;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background: linear-gradient(to right, #0f1014 , transition 100%);
+    backdrop-filter: blur(5px);
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    margin-left: 2.2vw;
+}
+
+.logo img{
+    width: 3.5vw;
+    height: 2.7vw;
+    border-radius: 0px;
+}
+
+.logo button{
+    width: 6vw;
+    height: 1.5vw;
+    border: none;
+    border-radius: 1vw;
+    margin-top: 1.5vh;
+    font-size: 0.85vw;
+    background-color: #262D3F; 
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-left: -1.2vw;
+    padding-bottom: 0.5vh;
+}
+
+.logo button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-left: 1vw;
+}
+
+.menu ul{
+    list-style: none;
+    font-size: 1.3vw;
+    margin-left: -0.1vw;
+}
+
+.menu ul li p{
+  position: absolute;
+  white-space: nowrap;
+  margin-top: -5.2vw; 
+  margin-left: 2.5vw;
+  visibility: hidden;
+  opacity: 0;
+  color: #FFF;
+}
+.menu ul li i{
+    margin-bottom: 7vh;
+    opacity: 0.8;
+    color: #FFF; 
+    transition: all linear 0.1s;
+}
+
+.menu ul li i:hover{
+    opacity: 1;
+    font-size: 1.4vw;
+}
+
+.movies-section{
+    height: 100%;
+    width: 100%;
+    padding: 5vw 0vw 0vw 7vw;
+    background-color: #0f1014;
+}
+
+.Title{
+    position: absolute;
+    margin-top: -1vh;
+    color: #ffffffab;
+    font-size: 3.3vh;
+    margin-top: 5vw;
+}
+
+.Title2{
+    position: absolute;
+    margin-top: -1vh;
+    margin-left: 0.4vw;
+    color: #ffffffab;
+    font-size: 3.3vh;
+}
+
+.latest-release{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.latest-release::-webkit-scrollbar{
+    display: none;
+  }
+
+.scroller-in{
+    display: inline-flex;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Section1{
+    margin-top: 5vw;
+}
+
+.cards {
+    position: relative;
+    height: 9.3vw;
+    width: 16vw;
+    border-radius: 0.4vw;
+    overflow: hidden;
+    margin-top: 3.5vw;
+    transition: .5s;
+    margin-left: 0.5vw;
+    margin-bottom: 5vw;
+    background-color: #8F98B2;
+    margin-right: 1vw;
+}
+
+.cards img {
+    height: 100%;
+    width: 100%;
+    scale: 1.1;
+    object-fit: cover;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+.cards:hover .card-body {
+    opacity: 1;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+footer{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #0f1014;
+    padding: 5vw 0vw 2vw 5vw;
+    color: #e1e6f0;
+}
+
+footer .main-div{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    
+}
+
+footer .main-div p a{
+    color: #8F98B2;
+    text-decoration: none;
+}
+
+.fa-solid{
+    color: #8F98B2;
+}
+
+.main-h5{
+    margin-bottom: 5vh;
+}
+
+.f-p{
+    position: absolute;
+    margin-top: -3.1vh;
+    margin-left: 1.7vw;
+    color: #8F98B2;
+}
+
+footer .second-div{
+    position: relative;
+    margin-left: 7.5vw;
+    margin-top: 4vh;
+    color: #8F98B2;
+}
+.second-div-1 {
+    display: flex;
+}
+
+.second-div-1 i{
+    margin-top: 0.7vh;
+}
+.second-div-1 p a{
+    margin-left: 0.5vw;
+    text-decoration: none;
+    color: #8F98B2;
+}
+.second-div-2 {
+    display: flex;
+}
+
+.second-div-2 p a{
+    margin-right: 1vw;
+    text-decoration: none;
+    color: #8F98B2;
+}
+
+.fa-brands{
+    font-size: 1.7vw;
+    margin-right: 1vw;
+}
+
+.f-div-4 a i{
+    color: #8F98B2;
+    text-decoration: none;
+}

@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #0f1014;
+    font-family: 'Gilroy', sans-serif;
+
+}
+
+.main-section{
+    display: flex;
+}
+
+.nav-section{
+    height: 100vh;
+    width: 30vh;
+    background-color: #8f98b23f;
+    padding: 3vw 1vw;
+}
+
+.logo{
+    height: 4vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 0.8vw;
+}
+
+.logo h3{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    font-weight: 100;
+    letter-spacing: 0.15vw;
+}
+
+.menu{
+    height: 60vh;
+    width: 100%;
+    margin-top: 2vw;
+    padding: 1vw;
+    font-size: 1vw;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    background-color: #1616171a;
+    border-radius: 1vw;
+}
+
+
+.dashboard{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dashboard i{
+    font-size: 1.5vw;
+}
+
+.dashboard h4{
+   margin-top: 0.3vw;
+}
+
+
+.user{
+    display: flex;
+}
+
+.user i{
+    font-size: 1.25vw;
+    margin-left: 1.35vw;
+    margin-right: 1.3vw;
+}
+
+.analytics{
+    display: flex;
+}
+
+.analytics i{
+    font-size: 1.25vw;
+    margin-left: 1.35vw;
+    margin-right: 1.2vw;
+}
+
+.content{
+    display: flex;
+}
+
+.content i{
+    font-size: 1.25vw;
+    margin-left: 1.35vw;
+    margin-right: 1.2vw;
+}
+
+.payments{
+    display: flex;
+}
+
+.payments i{
+    font-size: 1.2vw;
+    margin-left: 1.35vw;
+    margin-right: 1.2vw;
+}
+
+.payments h4{
+    margin-left: -0.3vw;
+}
+
+.setting{
+    display: flex;
+}
+
+.setting i{
+    font-size: 1.3vw;
+    margin-left: 1.65vw;
+    margin-right: 1.2vw;
+}
+
+.admin{
+    height: 7vw;
+    width: 100%;
+    margin-top: 3vw;
+    padding: 0.5vw 1.5vw;
+    font-size: 1.2vw;
+}
+
+.admin-1{
+    display:flex;
+    margin-bottom: 0.3vw;
+}
+
+.admin-1 img{
+    height: 3vw;
+    width: 3vw;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 0.4vw;
+    margin-right: 1vw;
+}
+
+.admin-1 h4{
+    margin-top: 0.7vw;
+}
+
+.log {
+    display: flex;
+    margin-top: 0.7vw;
+    margin-left: 1vw;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2vw;
+}
+
+.log i{
+    margin-right: 1vw;
+}
+.content-section{
+    width: 100vw;
+    padding: 4vw;
+}
+nav{
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.search {
+    width: 15vw;
+    padding: 0.4vw;
+    height: 2vw;
+    border: none;
+    border-radius: 0.9vw;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+}
+
+.search input[type="text"]{
+    border: none;
+    margin-left: 0.3vw;
+    height: 1.8vw;
+    width: 78%;
+    position: absolute;
+    margin-top: -0.3vw;
+    outline: none;
+    color: #000;
+}
+
+.search i{
+    color: #000;
+    font-size: 1.3vw;
+    margin-top: -0.12vw;
+    margin-left: 12vw;
+    position: absolute;
+}
+
+section{
+    height: 97%;
+    width: 100%;
+    display: flex;
+}
+
+.user-section{
+    height: 68vh;
+    background-color: #8f98b20d;
+    width: 78.8vw;
+    border-top-left-radius: 1.5vw;
+    border-top-right-radius: 1.5vw;
+    padding: 1vw;
+    overflow: auto;
+}
+
+.user-section::-webkit-scrollbar {
+    display: none;
+}
+
+.user-section h2{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    color: #ff8d3cc8;
+}
+.user-section table{
+   width: 100%;
+   margin-top: 4.5vw;
+   text-align: center;
+}
+ 
+.user-section table tbody td{
+    height: 3.8rem;
+
+}
+.user-section table tbody tr:last-child td{
+    border: none;
+}
+
+.user-section table thead th{
+     color: #ffaf76c8;
+}
+
+.hr2{
+    position: absolute;
+    top: 37.5%;
+    margin-left: 1.2%;
+    width: 74%;
+}
+
+.user-section a{
+   text-align: center;
+   display: block;
+   margin: 1rem;
+   color: #737fec92;
+   cursor: pointer;
+}
+
+.user-section .update{
+    color: royalblue;
+    cursor: pointer;
+}
+
+.user-section .Delete{
+    cursor: pointer;
+    color: royalblue;
+    padding: 0.4vw;
+    border: none;
+    border-radius: 5vw;
+    background-color: #ffffff14;
+}
+
+.Released{
+    color: #45e26a96;
+}
+.upload{
+    height: 3vw;
+    bottom: 4.2vw;
+    width: 78.8vw;
+    border-bottom-left-radius: 1.5vw;
+    border-bottom-right-radius: 1.5vw;
+    background-color: rgba(191, 219, 255, 0.069);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.upload_movies{
+    text-align: center;
+    margin-left: -6.5vw;
+    font-size: 1vw;
+    color: #b6ff76c8;
+    cursor: pointer;
+}
+
+.upl{
+    color: #76bfffc8;
+}
+
+
+.ad{
+    font-size: 0.7vw;
+    margin-left: 0.7vw;
+}
+
+.Edit_Profile{
+    display: flex;
+    margin-top: 0.7vw;
+    margin-left: 1vw;
+    font-size: 1.1vw;
+    position: absolute;
+    left: 17vw;
+    bottom: 1.4vw;
+}
+
+.Edit_Profile i{
+    margin-right: 1vw;
+}

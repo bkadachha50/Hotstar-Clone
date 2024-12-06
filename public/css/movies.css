@@ -1,0 +1,340 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+  
+body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.main-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.content-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-section{
+    width: 12vw;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-section:hover{
+    width: 12vw;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background: linear-gradient(to right, #0f1014 , transition 100%);
+    backdrop-filter: blur(5px);
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    margin-left: 2.2vw;
+}
+
+.logo img{
+    width: 3.5vw;
+    height: 2.7vw;
+    border-radius: 0px;
+}
+
+.logo button{
+    width: 6vw;
+    height: 1.5vw;
+    border: none;
+    border-radius: 1vw;
+    margin-top: 1.5vh;
+    font-size: 0.85vw;
+    background-color: #262D3F; 
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-left: -1.2vw;
+    padding-bottom: 0.5vh;
+}
+
+.logo button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-left: 1vw;
+}
+
+.menu ul{
+    list-style: none;
+    font-size: 1.3vw;
+    margin-left: 0.1vw;
+}
+
+.menu ul li p{
+  position: absolute;
+  white-space: nowrap;
+  margin-top: -5.2vw; 
+  margin-left: 2.5vw;
+  visibility: hidden;
+  opacity: 0;
+  color: #FFF;
+}
+.menu ul li i{
+    margin-bottom: 7vh;
+    opacity: 0.8;
+    color: #FFF; 
+    transition: all linear 0.1s;
+}
+
+.menu ul li i:hover{
+    opacity: 1;
+    font-size: 1.4vw;
+}
+
+
+.section-1{
+    height: 100%;
+    width: 100%;
+}
+.section-1 .linear{
+    background-image: url(https://wallpapers.com/images/hd/movie-poster-background-samvvhyda6ylvmkw.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 105vh;
+    margin-top: -10vh;
+    z-index: -1;
+    position: absolute;
+}
+
+.section-1 .bg-image{
+    width: 100%;
+    height: 105vh;
+    margin-top: -10vh;
+    z-index: 2;
+    background: linear-gradient(to right, #0f1014 ,transparent 70%);
+}
+
+
+.section-1 .bg-linear{
+    width: 100%;
+    height: 105vh;
+    margin-top: -10vh;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(to top, #0f1014,transparent 70%);
+}
+.description{
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    margin-top: -60vh;
+    margin-left: 13vw;
+}
+.description h4{
+    color: #ffffff94;
+}
+.description h1{
+    font-size: 3.8vw;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-left: -1vh;
+    color: #ffffff94;
+}
+
+
+.description .Type{
+    margin-top: -3vh;
+    color: #ffffff94;
+}
+
+.description h1 span{
+    color: #d6161c;
+}
+
+.description p{
+    font-weight: 600;
+    width: 29vw;
+    margin-top: -2vh;
+    color: #ffffffb2;
+}
+
+#btn{
+    width: 13vw;
+    height: 3vw;
+    border: none;
+    border-radius: 1vw;
+    margin-top: 1.5vh;
+    font-size: 0.85vw;
+    background-color: #fff; 
+    color: #0f1014;
+    font-size: 1.1vw;
+    margin-right: 0.5vw;
+    cursor: pointer;
+}
+
+#btn2{
+    width: 3.5vw;
+    height: 3vw;
+    border: none;
+    border-radius: 1vw;
+    margin-top: 1.5vh;
+    font-size: 0.85vw;
+    background-color: #fff; 
+    color:#0f1014;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+
+.movies-section{
+    /* height: 250vh; */
+    height: 100%;
+    width: 100%;
+    padding: 5vw 0vw 0vw 7vw;
+    background-color: #0f1014;
+}
+
+.Title{
+    position: absolute;
+    margin-top: 1.5vh;
+    color: #ffffffab;
+    font-size: 3.3vh;
+}
+
+.Title2{
+    position: absolute;
+    margin-top: 1.5vh;
+    margin-left: 0.4vw;
+    color: #ffffffab;
+    font-size: 3.3vh;
+}
+
+.latest-release{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.latest-release::-webkit-scrollbar{
+    display: none;
+}
+
+.scroller-in{
+    display: inline-flex;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.cards {
+    position: relative;
+    height: 15vw;
+    width: 11vw;
+    border-radius: 0.4vw;
+    overflow: hidden;
+    margin-top: 5vw;
+    transition: .5s;
+    margin-left: 1.8vw;
+    margin-bottom: 5vw;
+}
+
+.cards img {
+    height: 100%;
+    width: 100%;
+    scale: 1.1;
+    object-fit: cover;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+.cards:hover .card-body {
+    opacity: 1;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-body {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, #0f101400, #192133 98%);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+}
+
+.des {
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.watchlist-btn {
+    position: relative;
+    width: 100%;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 500;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.watchlist-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    height: 35px;
+    width: 35px;
+    background-image: url(images/add.png);
+    background-size: cover;
+    transform: scale(0.4);
+}
+
+.watchlist-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
